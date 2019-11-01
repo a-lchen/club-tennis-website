@@ -1,5 +1,5 @@
 body {
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-size: 16px;
   min-height: 100vh;
   background-color: black;
@@ -7,15 +7,15 @@ body {
 
 h1,
 h2,
-h3{
-  font-family: 'Raleway', sans-serif;
+h3 {
+  font-family: "Raleway", sans-serif;
   color: white;
   margin-bottom: 0;
 }
 
 h4 {
   font-size: 14px;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
   color: white;
 }
 
@@ -60,7 +60,7 @@ footer {
 
 .paragraph {
   margin-bottom: 25px;
-  text-align:center;
+  text-align: center;
   color: white;
 }
 
@@ -84,7 +84,6 @@ footer {
   background-color: black;
   padding-bottom: 50px;
 }
-
 
 /*** NAV ***/
 
@@ -130,7 +129,6 @@ footer {
   color: #ffffff;
 }
 
-
 /*** banner section ***/
 
 .banner.main {
@@ -147,7 +145,7 @@ footer {
 .main-photo {
   height: 100%;
   vertical-align: middle;
-  background-image: url(https://mitclubtennis.files.wordpress.com/2019/03/img_4924.jpg);
+  background-image: url(/static/img/2019banner.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 100%;
@@ -162,7 +160,13 @@ footer {
   height: 100%;
   width: 100%;
   vertical-align: middle;
-  background-image: linear-gradient(rgba(0,0,0,0.40) 0%, rgba(0,0,0,0.40) 10%, rgba(0,0,0,0.45) 35%, rgba(0,0,0,0.7) 80%, rgba(0,0,0,1.0) 100%);
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.4) 0%,
+    rgba(0, 0, 0, 0.4) 10%,
+    rgba(0, 0, 0, 0.45) 35%,
+    rgba(0, 0, 0, 0.7) 80%,
+    rgba(0, 0, 0, 1) 100%
+  );
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 100%;
@@ -176,8 +180,14 @@ footer {
 .members-photo {
   height: 100%;
   vertical-align: middle;
-  background-image: linear-gradient(rgba(0,0,0,0.90) 0%, rgba(0,0,0,0.40) 10%, rgba(0,0,0,0.45) 35%, rgba(0,0,0,0.7) 80%, rgba(0,0,0,1.0) 100%),
-  url(/static/img/2018v.jpg);
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.9) 0%,
+      rgba(0, 0, 0, 0.4) 10%,
+      rgba(0, 0, 0, 0.45) 35%,
+      rgba(0, 0, 0, 0.7) 80%,
+      rgba(0, 0, 0, 1) 100%
+    ),
+    url(/static/img/2018v.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 100%;
@@ -204,7 +214,13 @@ footer {
   height: 100%;
   width: 100%;
   vertical-align: middle;
-  background-image: linear-gradient(rgba(0,0,0,0.40) 0%, rgba(0,0,0,0.40) 10%, rgba(0,0,0,0.45) 35%, rgba(0,0,0,0.7) 80%, rgba(0,0,0,1.0) 100%);
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.4) 0%,
+    rgba(0, 0, 0, 0.4) 10%,
+    rgba(0, 0, 0, 0.45) 35%,
+    rgba(0, 0, 0, 0.7) 80%,
+    rgba(0, 0, 0, 1) 100%
+  );
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 100%;
@@ -215,10 +231,10 @@ footer {
   left: 0;
 }
 
-.title{
+.title {
   position: absolute;
   left: 150px;
-  top: 250px;
+  top: 125px;
   z-index: 10;
 }
 
@@ -234,7 +250,6 @@ footer {
   left: 20px;
 }
 
-
 /*** NEWS ***/
 
 .news {
@@ -245,7 +260,6 @@ footer {
   padding: 60px 40px;
   max-width: 1200px;
   width: 80%;
-
 }
 
 .news .sub-image {
@@ -257,10 +271,7 @@ footer {
   background-color: transparent;
   background-size: cover;
   margin-bottom: 15px;
-
 }
-
-
 
 /** carousel **/
 
@@ -298,7 +309,7 @@ footer {
 }
 
 .slick-prev {
-  left : -70px;
+  left: -70px;
 }
 
 .slick-next {
@@ -313,18 +324,16 @@ footer {
   font-size: 40px;
 }
 
-
 .icon {
-    display: inline-block;
-    width: 14px;
-    height: 14px;
-    stroke-width: 0;
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  stroke-width: 0;
 }
 
 .icon-instagram {
   padding-top: 1px;
 }
-
 
 /*** members ***/
 
@@ -373,50 +382,130 @@ footer {
   width: 60%;
 }
 
+.u-centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
 
+.u-input {
+  background-color: #444444;
+  color: white;
+  border: none;
+}
+
+.u-input:focus {
+  background-color: #444444;
+  color: white;
+  border: none;
+}
+
+.u-button {
+  background-color: #8e0000;
+  border-radius: 10px;
+  width: 200px;
+  height: 50px;
+  color: white;
+  cursor: pointer;
+}
 
 /*** ANIMATIONS ***/
 
-@keyframes fadein{
-    0%{opacity:0}
-    33%{opacity:0}
-    100%{opacity:1}
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  33% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
-@-moz-keyframes fadein { /* Firefox */
-  0%{opacity:0}
-  66%{opacity:0}
-  100%{opacity:1}
+@-moz-keyframes fadein {
+  /* Firefox */
+  0% {
+    opacity: 0;
+  }
+  66% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
-@-webkit-keyframes fadein { /* Safari and Chrome */
-  0%{opacity:0}
-  66%{opacity:0}
-  100%{opacity:1}
+@-webkit-keyframes fadein {
+  /* Safari and Chrome */
+  0% {
+    opacity: 0;
+  }
+  66% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
-@-o-keyframes fadein { /* Opera */
-  0%{opacity:0}
-  66%{opacity:0}
-  100%{opacity:1}
+@-o-keyframes fadein {
+  /* Opera */
+  0% {
+    opacity: 0;
+  }
+  66% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
-@keyframes fadeinfast{
-    0%{opacity:0}
-    33%{opacity:0}
-    100%{opacity:1}
+@keyframes fadeinfast {
+  0% {
+    opacity: 0;
+  }
+  33% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
-@-moz-keyframes fadeinfast { /* Firefox */
-  0%{opacity:0}
-  33%{opacity:0}
-  100%{opacity:1}
+@-moz-keyframes fadeinfast {
+  /* Firefox */
+  0% {
+    opacity: 0;
+  }
+  33% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
-@-webkit-keyframes fadeinfast { /* Safari and Chrome */
-  0%{opacity:0}
-  33%{opacity:0}
-  100%{opacity:1}
+@-webkit-keyframes fadeinfast {
+  /* Safari and Chrome */
+  0% {
+    opacity: 0;
+  }
+  33% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
-@-o-keyframes fadeinfast { /* Opera */
-  0%{opacity:0}
-  33%{opacity:0}
-  100%{opacity:1}
+@-o-keyframes fadeinfast {
+  /* Opera */
+  0% {
+    opacity: 0;
+  }
+  33% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @media only screen and (max-width: 425px) {
